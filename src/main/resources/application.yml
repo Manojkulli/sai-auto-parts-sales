@@ -1,4 +1,4 @@
 mongo:
   connection:
-    url: mongodb://localhost:27017/
+    url: mongodb://puneetkulli:JTSOv6zR5qjvMuwb@sai-shard-00-00.81nrt.mongodb.net:27017,sai-shard-00-01.81nrt.mongodb.net:27017,sai-shard-00-02.81nrt.mongodb.net:27017/?ssl=true&replicaSet=atlas-d9geq1-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Sai
   authdb: authDb

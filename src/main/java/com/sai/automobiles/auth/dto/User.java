@@ -1,4 +1,4 @@
-package com.sai.automobiles.project.dto;
+package com.sai.automobiles.auth.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

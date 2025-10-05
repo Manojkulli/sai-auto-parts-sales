@@ -1,7 +1,7 @@
-package com.sai.automobiles.project.controllers;
+package com.sai.automobiles.auth.controller;
 
-import com.sai.automobiles.project.dto.User;
-import com.sai.automobiles.project.service.UserService;
+import com.sai.automobiles.auth.dto.User;
+import com.sai.automobiles.auth.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,8 +16,14 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("/saveUser")
+    @PostMapping("/createUser")
     public ResponseEntity<User> saveUser(@RequestBody User user){
        return userService.saveUser(user);
     }
+
+    @PostMapping("/login")
+    public String login(@RequestBody User user){
+        return userService.isUserAuthenticated(user);
+    }
+
 }
